@@ -1,0 +1,6 @@
+npm install // this will install the modules defined in package.json
+
+in server.js you can do:
+	res.send(STRING)
+	res.sendFile(FILE)
+	res.render(VIEW_JADE_OR_EJS_FILE)
