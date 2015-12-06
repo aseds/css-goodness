@@ -14,9 +14,9 @@ function compile(str, path) {
 	return stylus(str) 
 //		.use(autoprefixer())
 		.set('filename', path)
-		.set('compress', true)
+		// .set('compress', true)
 		.use(nib())
-		.import('nib');
+		.import('nib')
 }
 
 app.set('views', path.join(__dirname, 'views'));
