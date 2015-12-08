@@ -1,0 +1,95 @@
+defaultPadding()
+	padding 5px
+navPadding()
+	padding 0 10px
+navh()
+	height 50px
+lefty()
+	float left
+righty()
+	float right
+rmBullet()
+	list-style none
+marginLess()
+	margin 0
+paddingLess()
+	padding 0
+inline()
+	display inline
+fullLine()
+	display block
+ovehid()
+	overflow hidden
+
+getParentH()
+	display inline-block
+	line-height 50px
+
+
+head
+	bg(pink)
+nav
+	navh()
+	bg(#333)
+	navPadding()
+	// ovehid()
+
+nav ul
+	getParentH()
+	righty()
+	paddingLess()
+	marginLess()
+	bg(green)
+	ovehid()
+	
+nav ul li
+	getParentH()
+	bg(orange)
+	padding 0 5px
+	border-right 1px dashed $teal
+	lefty()
+	rmBullet()
+
+nav ul li:hover 
+	bg(white)
+
+nav ul li a 
+	getParentH()
+	bg($olive)
+
+
+
+
+nav .brand.full-line
+	fullLine()
+
+nav h1.brand, nav h2.brand, nav h3.brand, nav h4.brand, nav h5.brand, nav h6.brand
+	marginLess()
+	getParentH()
+	bg(tomato)
+	
+nav .brand.full-line a
+	inline()
+	getParentH()
+	bg(blue)
+	ovehid()
+	color white
+
+
+
+header .brand.full-line
+	fullLine()
+	
+header h1.brand 
+	marginLess()
+	getParentH()
+	bg(tomato)
+
+header .brand.full-line a 
+	inline()
+	getParentH()
+	bg(blue)
+	ovehid()
+	color white
+	
+

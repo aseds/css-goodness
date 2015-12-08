@@ -182,6 +182,79 @@ td,
 th {
   padding: 0;
 }
+head {
+  background-color: #ffc0cb;
+}
+nav {
+  height: 50px;
+  background-color: #333;
+  padding: 0 10px;
+}
+nav ul {
+  display: inline-block;
+  line-height: 50px;
+  float: right;
+  padding: 0;
+  margin: 0;
+  background-color: #008000;
+  overflow: hidden;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  background-color: #ffa500;
+  padding: 0 5px;
+  border-right: 1px dashed #39cccc;
+  float: left;
+  list-style: none;
+}
+nav ul li:hover {
+  background-color: #fff;
+}
+nav ul li a {
+  display: inline-block;
+  line-height: 50px;
+  background-color: #3d9970;
+}
+nav .brand.full-line {
+  display: block;
+}
+nav h1.brand,
+nav h2.brand,
+nav h3.brand,
+nav h4.brand,
+nav h5.brand,
+nav h6.brand {
+  margin: 0;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #ff6347;
+}
+nav .brand.full-line a {
+  display: inline;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #00f;
+  overflow: hidden;
+  color: #fff;
+}
+header .brand.full-line {
+  display: block;
+}
+header h1.brand {
+  margin: 0;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #ff6347;
+}
+header .brand.full-line a {
+  display: inline;
+  display: inline-block;
+  line-height: 50px;
+  background-color: #00f;
+  overflow: hidden;
+  color: #fff;
+}
 .row {
   min-height: 200px;
   min-width: 200px;
