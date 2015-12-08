@@ -50,3 +50,4 @@ header
 
 ```
 >>>>>>> sami
+.sami
