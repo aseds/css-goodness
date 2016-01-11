@@ -182,44 +182,23 @@ td,
 th {
   padding: 0;
 }
-head {
-  background-color: #ffc0cb;
+header {
+  background-color: #222;
 }
-nav {
-  height: 50px;
-  background-color: #333;
-  padding: 0 10px;
-}
-nav ul {
-  display: inline-block;
-  line-height: 50px;
-  float: right;
-  padding: 0;
-  margin: 0;
-  background-color: #008000;
-  overflow: hidden;
-}
-nav ul li {
-  display: inline-block;
-  line-height: 50px;
-  background-color: #ffa500;
-  padding: 0 5px;
-  border-right: 1px dashed #39cccc;
+.brand {
   float: left;
-  list-style: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-nav ul li:hover {
-  background-color: #fff;
+.brand a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: #337ab7;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-nav ul li a {
-  display: inline-block;
-  line-height: 50px;
-  background-color: #3d9970;
+.brand a:hover {
+  color: #fff;
 }
-nav .brand.full-line {
-  display: block;
-}
-nav h1.brand,
+header h1.brand,
 nav h2.brand,
 nav h3.brand,
 nav h4.brand,
@@ -228,31 +207,36 @@ nav h6.brand {
   margin: 0;
   display: inline-block;
   line-height: 50px;
-  background-color: #ff6347;
 }
-nav .brand.full-line a {
-  display: inline;
+nav {
+  height: 50px;
+  padding: 0 7px;
+}
+nav ul {
   display: inline-block;
   line-height: 50px;
-  background-color: #00f;
-  overflow: hidden;
-  color: #fff;
-}
-header .brand.full-line {
-  display: block;
-}
-header h1.brand {
+  float: right;
+  padding: 0;
   margin: 0;
-  display: inline-block;
-  line-height: 50px;
-  background-color: #ff6347;
-}
-header .brand.full-line a {
-  display: inline;
-  display: inline-block;
-  line-height: 50px;
-  background-color: #00f;
   overflow: hidden;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  float: left;
+  list-style: none;
+}
+nav ul li:hover {
+  background-color: #333;
+}
+nav ul li a {
+  padding: 0 25px;
+  display: inline-block;
+  line-height: 50px;
+  color: #9d9d9d;
+  text-decoration: none;
+}
+nav ul li a:hover {
   color: #fff;
 }
 .row {
@@ -300,5 +284,5 @@ body {
   margin: 0 auto;
 }
 html {
-  font: bsfont;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
