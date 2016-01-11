@@ -1,5 +1,50 @@
 @import 'nav'
 // tmp
+.row 
+	border 1px solid black
+.col-3
+	min-height medium
+	fourth-width()
+.col-4
+	min-height medium
+	third-width()
+.col-6
+	min-height medium
+	half-width()
+.col-12
+	min-height medium
+	full-width()
+	
+.column
+	float left
+	
+.row:nth-child(1) .column:nth-child(1)
+	bg(green)
+.row:nth-child(1) .column:nth-child(2)
+	bg($navy)
+.row:nth-child(1) .column:nth-child(3)
+	bg($olive)
+.row:nth-child(1) .column:nth-child(4)
+	bg($teal)
+	
+
+.row:nth-child(2) .column:nth-child(1)
+	bg($lime)
+.row:nth-child(2) .column:nth-child(2)
+	bg($maroon)
+
+
+.row:nth-child(3) .column:nth-child(1)
+	bg($green)
+
+
+.row:nth-child(4) .column:nth-child(1)
+	bg($navy)
+.row:nth-child(4) .column:nth-child(2)
+	bg($fuchsia)
+.row:nth-child(4) .column:nth-child(3)
+	bg($purple)
+	
 .row
 	boxit(medium)
 
