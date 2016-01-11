@@ -1,7 +1,9 @@
+noUnderline()
+	text-decoration none
 defaultPadding()
 	padding 5px
 navPadding()
-	padding 0 10px
+	padding 0 7px
 navh()
 	height 50px
 lefty()
@@ -14,23 +16,49 @@ marginLess()
 	margin 0
 paddingLess()
 	padding 0
+sidePadding(size)
+	padding 0 size
 inline()
 	display inline
 fullLine()
 	display block
 ovehid()
 	overflow hidden
-
+rPadding(size)
+	padding-right size
+lPadding(size)
+	padding-left size
 getParentH()
 	display inline-block
 	line-height 50px
+font()
+	font-family "Helvetica Neue",Helvetica,Arial,sans-serif
 
 
-head
-	bg(pink)
+header
+	bg(#222)
+	
+
+.brand 
+	lefty()
+	font()
+//	font-size 27px
+
+.brand a
+	lPadding(xmaller)
+	noUnderline()
+	color #337ab7
+	font()
+	
+.brand a:hover
+	color white
+
+header h1.brand, nav h2.brand, nav h3.brand, nav h4.brand, nav h5.brand, nav h6.brand
+	marginLess()
+	getParentH()
+
 nav
 	navh()
-	bg(#333)
 	navPadding()
 	// ovehid()
 
@@ -39,57 +67,21 @@ nav ul
 	righty()
 	paddingLess()
 	marginLess()
-	bg(green)
 	ovehid()
 	
 nav ul li
 	getParentH()
-	bg(orange)
-	padding 0 5px
-	border-right 1px dashed $teal
 	lefty()
 	rmBullet()
 
 nav ul li:hover 
-	bg(white)
-
+	bg(#333)
+	
 nav ul li a 
+	sidePadding(xmall)
 	getParentH()
-	bg($olive)
+	color #9d9d9d
+	noUnderline()
 
-
-
-
-nav .brand.full-line
-	fullLine()
-
-nav h1.brand, nav h2.brand, nav h3.brand, nav h4.brand, nav h5.brand, nav h6.brand
-	marginLess()
-	getParentH()
-	bg(tomato)
-	
-nav .brand.full-line a
-	inline()
-	getParentH()
-	bg(blue)
-	ovehid()
+nav ul li a:hover
 	color white
-
-
-
-header .brand.full-line
-	fullLine()
-	
-header h1.brand 
-	marginLess()
-	getParentH()
-	bg(tomato)
-
-header .brand.full-line a 
-	inline()
-	getParentH()
-	bg(blue)
-	ovehid()
-	color white
-	
-
